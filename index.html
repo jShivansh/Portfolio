@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivansh Joshi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./Images/logo.png" class="logo">
+                <ul id="sideMenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#services">Services</a></li> -->
+                    <li><a href="#projects">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="headerText">
+                <p>Software Engineer</p>
+                <h1>Hi, I'm <span>Shivansh</span> <br>Joshi From Mumbai</h1>
+            </div>
+        </div>
+    </div>
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="aboutCol1">
+                    <img src="./Images/Profile.png">
+                </div>
+                <div class="aboutCol2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Software Developer with interest in all aspects (frontend, backend, database) of development. Smart working
+                        professional with good analytical abilities and quick adaptability to changing environment. Works well under
+                        pressure and consistently meets deadlines and target while delivering high quality work. Possesses very good
+                        communication skills and the ability to quickly master new software libraries.</p>
+                    <div class="tabTitles">
+                        <p class="tabLinks activeLink" onclick="openTab('skills')">Skills</p>
+                        <p class="tabLinks" onclick="openTab('experience')">Experience</p>
+                        <p class="tabLinks" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tabContent activeTab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Proficient in making web apps using HTML, CSS, JS</li>
+                            <li><span>Java</span><br>Proficient in Java programming</li>
+                            <li><span>Python</span><br>Proficient in Python programming</li>
+                        </ul>
+                    </div>
+                    <div class="tabContent" id="experience">
+                        <ul>
+                            <li><span>Aug 2018 - Dec 2019</span><br>L&T Infotech- Software Engineer</li>
+                            <li><span>Summer 2017</span><br>College Pond - Internship</li>
+                            <!-- <li><span>Python</span><br>Designing Python Programs</li> -->
+                        </ul>
+                    </div>
+                    <div class="tabContent" id="education">
+                        <ul>
+                            <li><span>2014 - 2018</span><br>SRM UNIVERSITY, CHENNAI</li>
+                            <li><span>2014</span><br>KENDRIYA VIDYALAYA AMBARNATH (XII)</li>
+                            <li><span>2012</span><br>KENDRIYA VIDYALAYA AMBARNATH (X)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <!-- <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="servicesList">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Can create Web pages</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Java App</h2>
+                    <p>Can create Java Apps</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Python App</h2>
+                    <p>Can create Python App</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Project -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="workList">
+                <div class="work">
+                    <img src="./Images/work-1.jpg">
+                    <div class="layer">
+                        <h3>DRONAKREATION BAGS</h3>
+                        <p>Created e-commerce website for bags</p>
+                        <a href="https://jshivansh.github.io/DronaKreation/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./Images/work-2.png">
+                    <div class="layer">
+                        <h3>WHACK-A-MOLE GAME</h3>
+                        <p>A fun game to pass some time. Created using JS</p>
+                        <a href="https://jshivansh.github.io/WhackAMole/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./Images/work-3.jpg">
+                    <div class="layer">
+                        <h3>Amazon Clone</h3>
+                        <p>Created Amazon clone using various CSS elements</p>
+                        <a href="https://jshivansh.github.io/AmznClone/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/jShivansh" target="_blank" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contactLeft">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i><a href="mailto:shivansh.joshi053@gmail.com" id="mail1">shivansh.joshi053@gmail.com</a></p>
+                    <p><i class="fa-solid fa-phone"></i> +91-9176184296</p>
+                    <div class="socialIcons">
+                        <a href="https://www.linkedin.com/in/shivanshjoshi/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/jShivansh" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://x.com/shivansh_joshi5" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/shivansh.joshi.5/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="./Images/Resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contactRight">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" row="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Made with <i class="fa-solid fa-heart"></i> by Shivansh</p>
+        </div>
+    </div>
+
+
+    <script>
+        let tabLinks=document.getElementsByClassName("tabLinks");
+        let tabContents=document.getElementsByClassName("tabContent");
+        
+        function openTab(tabName){
+            for(tabLink of tabLinks){
+                tabLink.classList.remove("activeLink");
+            }
+
+            for(tabContent of tabContents){
+                tabContent.classList.remove("activeTab");
+            }
+
+            event.currentTarget.classList.add("activeLink");
+            document.getElementById(tabName).classList.add("activeTab")
+        }
+
+    </script>
+
+    <script>
+        let sidemenu = document.getElementById("sideMenu");
+
+        function openMenu(){
+            sidemenu.style.right = "0"
+        }
+
+        function closeMenu(){
+            sidemenu.style.right = "-200px"
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzFuI6XcOKVH-EXG_dW40dyVLuTYzLViIjeuSbfaGXmZ-NaWTaqLUZcHj-FhiT3zrZOvQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },3000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+</body>
+</html>
